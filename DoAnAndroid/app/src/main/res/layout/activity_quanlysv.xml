@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvQLSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quản lý sinh viên"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvMaSV"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Mã SV:"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvQLSV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etMaSV"/>
+
+    <EditText
+        android:id="@+id/etMaSV"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvQLSV"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvMaSV"/>
+
+    <TextView
+        android:id="@+id/tvTenSV"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Tên SV:"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvMaSV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etTenSV"/>
+
+    <EditText
+        android:id="@+id/etTenSV"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etMaSV"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvTenSV"/>
+
+    <TextView
+        android:id="@+id/tvDiaChi"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Địa Chỉ:"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvTenSV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etDiaChi"/>
+
+    <EditText
+        android:id="@+id/etDiaChi"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etTenSV"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvDiaChi"/>
+
+    <TextView
+        android:id="@+id/tvNgaySinh"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh:"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvDiaChi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvNgaySinhDate"/>
+
+    <TextView
+        android:id="@+id/tvNgaySinhDate"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="dd-MM-yyyy"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#0000FF"
+        app:layout_constraintTop_toBottomOf="@id/etDiaChi"
+        app:layout_constraintBottom_toBottomOf="@id/tvNgaySinh"
+        app:layout_constraintLeft_toRightOf="@id/tvNgaySinh"
+        />
+
+    <ImageButton
+        android:id="@+id/btnDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_date_picker"
+        app:layout_constraintTop_toBottomOf="@id/etDiaChi"
+        app:layout_constraintBottom_toBottomOf="@id/tvNgaySinhDate"
+        app:layout_constraintLeft_toRightOf="@id/tvNgaySinhDate"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvMaLopSV"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Lớp:"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvNgaySinh"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/spLop"/>
+
+    <Spinner
+        android:id="@+id/spLop"
+        android:layout_width="0pt"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNgaySinhDate"
+        app:layout_constraintLeft_toRightOf="@id/tvMaLopSV"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgAnhSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toBottomOf="@id/tvMaLopSV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnThemAnhSV"/>
+
+    <Button
+        android:id="@+id/btnThemAnhSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm ảnh SV"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toRightOf="@id/imgAnhSV"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spLop" />
+
+    <Button
+        android:id="@+id/btnLuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:textSize="10pt"
+        app:layout_constraintTop_toBottomOf="@id/imgAnhSV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách sinh viên"
+        android:textSize="10pt"
+        app:layout_constraintTop_toBottomOf="@id/btnLuu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+    <ListView
+        android:id="@+id/lvSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnLuu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_DangNhap">
+
+    <TextView
+        android:id="@+id/tvDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:textSize="18pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTaiKhoan"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Tai Khoan:"
+        android:textSize="14pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvDangNhap"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etTaiKhoan"/>
+
+    <EditText
+        android:id="@+id/etTaiKhoan"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvDangNhap"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvTaiKhoan"/>
+
+    <TextView
+        android:id="@+id/tvMatKhau"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Mat Khau:"
+        android:textSize="14pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvTaiKhoan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etMatKhau"/>
+
+    <EditText
+        android:id="@+id/etMatKhau"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etTaiKhoan"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvMatKhau"/>
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dang Nhap"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvMatKhau"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnDangKy"/>
+
+    <Button
+        android:id="@+id/btnDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dang Ky"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnDangNhap"
+        app:layout_constraintTop_toBottomOf="@id/etMatKhau"/>
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thoat"
+        android:textSize="10pt"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/btnDangKy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

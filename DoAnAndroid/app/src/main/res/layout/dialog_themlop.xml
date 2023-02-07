@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvThemLop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm Lớp"
+        android:textSize="14pt"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvMaLop"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Mã Lớp:"
+        android:textSize="14pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvThemLop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etMaLop"/>
+
+    <EditText
+        android:id="@+id/etMaLop"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvThemLop"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvMaLop"/>
+
+    <TextView
+        android:id="@+id/tvTenLop"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Tên Lớp:"
+        android:textSize="14pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvMaLop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etTenLop"/>
+
+    <EditText
+        android:id="@+id/etTenLop"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etMaLop"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvTenLop"/>
+
+    <Button
+        android:id="@+id/btnLuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:textSize="14pt"
+        app:layout_constraintTop_toBottomOf="@id/etTenLop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnDong"/>
+
+    <Button
+        android:id="@+id/btnDong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đóng"
+        android:textSize="14pt"
+        app:layout_constraintTop_toBottomOf="@id/etTenLop"
+        app:layout_constraintLeft_toRightOf="@id/btnLuu"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

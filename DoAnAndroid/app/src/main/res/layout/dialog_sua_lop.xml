@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvSuaLop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa Lớp"
+        android:textSize="14pt"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvMaLopSua"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Mã Lớp:"
+        android:textSize="14pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvSuaLop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etMaLopSua"/>
+
+    <EditText
+        android:id="@+id/etMaLopSua"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvSuaLop"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvMaLopSua"/>
+
+    <TextView
+        android:id="@+id/tvTenLopSua"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Tên Lớp:"
+        android:textSize="14pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvMaLopSua"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etTenLopSua"/>
+
+    <EditText
+        android:id="@+id/etTenLopSua"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etMaLopSua"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvTenLopSua"/>
+
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        android:textSize="14pt"
+        app:layout_constraintTop_toBottomOf="@id/etTenLopSua"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvCapNhatSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cap Nhat Sinh Vien"
+        android:textSize="14pt"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/tvMaSVdialog"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Ma SV:"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvCapNhatSV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etMaSVdialog"/>
+
+    <EditText
+        android:id="@+id/etMaSVdialog"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvCapNhatSV"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvMaSVdialog"/>
+
+    <TextView
+        android:id="@+id/tvTenSVdialog"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Ten SV:"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvMaSVdialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etTenSVdialog"/>
+
+    <EditText
+        android:id="@+id/etTenSVdialog"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etMaSVdialog"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvTenSVdialog"/>
+
+    <TextView
+        android:id="@+id/tvDiaChidialog"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Dia Chi:"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvTenSVdialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etDiaChidialog"/>
+
+    <EditText
+        android:id="@+id/etDiaChidialog"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etTenSVdialog"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvDiaChidialog"/>
+
+    <TextView
+        android:id="@+id/tvNgaySinhdialog"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Ngay Sinh :"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvDiaChidialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvNgaySinhDatedialog"/>
+
+    <TextView
+        android:id="@+id/tvNgaySinhDatedialog"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="dd-MM-yyyy"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#0000FF"
+        app:layout_constraintTop_toBottomOf="@id/etDiaChidialog"
+        app:layout_constraintBottom_toBottomOf="@id/tvNgaySinhdialog"
+        app:layout_constraintLeft_toRightOf="@id/tvNgaySinhdialog"
+        />
+
+    <ImageButton
+        android:id="@+id/btnDatePickerdialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_date_picker"
+        app:layout_constraintTop_toBottomOf="@id/etDiaChidialog"
+        app:layout_constraintBottom_toBottomOf="@id/tvNgaySinhDatedialog"
+        app:layout_constraintLeft_toRightOf="@id/tvNgaySinhDatedialog"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvMaLopSVdialog"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Lop:"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvNgaySinhdialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/spLopdialog"/>
+
+    <Spinner
+        android:id="@+id/spLopdialog"
+        android:layout_width="0pt"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNgaySinhDatedialog"
+        app:layout_constraintLeft_toRightOf="@id/tvMaLopSVdialog"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgAnhSVdialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toBottomOf="@id/tvMaLopSVdialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <Button
+        android:id="@+id/btnCapNhatdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cap Nhat"
+        android:textSize="14pt"
+        app:layout_constraintTop_toBottomOf="@id/imgAnhSVdialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
